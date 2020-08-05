@@ -1,0 +1,49 @@
+body {
+    font: 18px Times, Times New Roman, serif;
+}
+
+h1 {
+    font-size: 28px;
+    color: white;
+    background-color: #a52a2a;
+    text-align: center;
+    line-height: 37px;
+}
+
+.sunset img {
+    width: 100%;
+    image-rendering: auto;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.blue {
+    color: blue;
+}
+
+.cars {
+    text-align: center;
+}
+
+.cars img {
+    text-align: center;
+    border-width: 5px;
+    border-style: dashed;
+    border-color: black;
+    padding: 0px;
+    image-rendering: auto;
+}
+
+footer {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    background-color: black;
+    line-height: 23px;
+}
