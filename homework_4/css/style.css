@@ -1,0 +1,47 @@
+@import url(https://fonts.google.com/specimen/Open + Sans?subset=cyrillic&query=open&sidebar.open=true&selection.family=Open + Sans:wght@400;600);
+:root {
+    /* colors */
+    --grid-color: #333333;
+    --text-color: white;
+    --main-color: #00ccff;
+    --main-bg: black;
+    /* font-sizes */
+    --title-size: 20px;
+    --medium-size: 15px;
+    /* font-family */
+    --main-font: "Open Sans", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-size: 100%;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--main-bg);
+    display: flex;
+    justify: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: var(--title-size);
+    color: white;
+}
+
+footer {
+    font-size: var(--medium-size);
+    color: white;
+}
+
+span.blue {
+    color: var(--main-color);
+}
