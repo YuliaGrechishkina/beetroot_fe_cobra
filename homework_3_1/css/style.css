@@ -28,7 +28,7 @@ body {
 }
 
 div.nav {
-    height: 160px;
+    min-height: 160px;
     background-color: var(--black);
     float: center;
     display: flex;
@@ -65,7 +65,7 @@ div.nav {
 }
 
 .nav a:hover img {
-    margin-left: -40%;
+    margin-left: -30%;
     height: 115px;
     width: 150px;
 }
@@ -85,9 +85,16 @@ div.left {
 ul li {
     list-style: none;
     text-align: left;
-    color: #d65a10;
     text-decoration-line: underline;
     margin: 20px;
+}
+
+a.orange {
+    color: #d65a10;
+}
+
+a:hover {
+    color: blue;
 }
 
 li:nth-child(5) {
