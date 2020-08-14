@@ -32,33 +32,48 @@ body {
     justify-content: center;
 }
 
-section.grid {
-    width: 100%;
-    height: 420px;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-}
-
-section.grid-container {
-    width: 80%;
-    height: 420px;
-    background-image: url(../assets/Grid.png);
+.logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-content: center;
-}
-
-.logo {
-    margin-top: 25px;
     margin-bottom: 75px;
 }
 
-span.main {}
+a {
+    display: block;
+    position: relative;
+}
 
-span.main::after {
+a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(icon-path);
+    opacity: 0;
+}
+
+a:hover:before,
+a:hover:after {
+    opacity: 1;
+}
+
+section.main::after {
     content: "";
     width: 200px;
     height: 1px;
@@ -74,7 +89,7 @@ h1 {
 }
 
 section.networks {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 ul li {
