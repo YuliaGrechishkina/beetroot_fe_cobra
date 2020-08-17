@@ -8,6 +8,9 @@
 html,
 body {
     min-height: 100vh;
+    font-size: 100%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
 }
 
 body {
@@ -27,16 +30,37 @@ body {
 .content {
     color: $text-color;
     display: inline-block;
+    align-content: stretch;
     text-align: center;
-    width: 220px;
+    max-width: 30%;
 }
 
 h1 {
     color: $text-main-color;
+    margin-bottom: 20px;
+}
+
+svg {
+    fill: $icon-hover-color;
 }
 
 .icon {
-    padding: 7px;
     border: 2px solid $icon-hover-color;
     border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    fill: $icon-hover-color;
+    margin-bottom: 20px;
+}
+
+a.icon:hover {
+    background-color: $icon-hover-color;
+}
+
+svg:hover {
+    fill: $icon-color;
 }
