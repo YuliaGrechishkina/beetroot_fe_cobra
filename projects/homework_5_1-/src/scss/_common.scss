@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease-in;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.content {
+    color: $text-color;
+    display: inline-block;
+    text-align: center;
+    width: 220px;
+}
+
+h1 {
+    color: $text-main-color;
+}
+
+.icon {
+    padding: 7px;
+    border: 2px solid $icon-hover-color;
+    border-radius: 50%;
+}
