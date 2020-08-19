@@ -57,10 +57,10 @@ svg {
     margin-bottom: 20px;
 }
 
-a.icon:hover {
-    background-color: $icon-hover-color;
+.icon:hover>svg {
+    fill: $icon-color;
 }
 
-svg:hover {
-    fill: $icon-color;
+.icon:hover {
+    background-color: $icon-hover-color;
 }
