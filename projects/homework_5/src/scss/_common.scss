@@ -56,11 +56,14 @@ li {
     vertical-align: middle;
     padding: 15px;
     border: 2px solid transparent;
+    cursor: pointer;
+    display: block;
 }
 
 span {
     color: $text-hover-color;
     font-size: 15px;
+    padding: 7px 10px;
 }
 
 .brackets::before {
@@ -107,4 +110,7 @@ input[type="checkbox"]:checked+label {
 
 label {
     cursor: pointer;
+    text-align: center;
+    width: 100%;
+    display: inline-flex;
 }
