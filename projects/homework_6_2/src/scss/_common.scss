@@ -21,6 +21,10 @@ body {
     color: #fff;
 }
 
+div {
+    margin-bottom: 20px;
+}
+
 .weather {
     display: flexbox;
     max-width: 80%;
@@ -132,8 +136,4 @@ ul:hover li {
 
 ul:hover li:hover {
     opacity: 1;
-}
-
-div {
-    margin-bottom: 20px;
 }
