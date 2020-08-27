@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0s ease-in;
+    font-family: "MyriadProRegular", sans-serif;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: "MyriadProRegular", sans-serif;
+    font-size: 14px;
+    background-color: #e2e7ec;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 70px;
+}
+
+.gallery_main-photo-text {
+    color: white;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+.main-text {
+    font-size: 30px;
+}
+
+.gallery_main-photo {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.gallery_photo {
+    background-color: #fff;
+    height: 541px;
+    position: relative;
+}
+
+.gallery_photo-image {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.gallery_photo-text {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+}
+
+.icon {
+    border-radius: 50%;
+    position: absolute;
+    top: 160%;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer_svg {
+    margin-right: 10px;
+}
