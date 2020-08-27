@@ -22,7 +22,7 @@ body {
 }
 
 .weather {
-    display: block;
+    display: flexbox;
     max-width: 80%;
     max-height: 60%;
     margin: 0 auto;
@@ -42,6 +42,7 @@ header {
 svg {
     width: 30px;
     fill: #fff;
+    vertical-align: middle;
 }
 
 ul li {
@@ -53,12 +54,21 @@ ul li {
     height: 100px;
     text-align: center;
     vertical-align: middle;
-    padding: 4%;
+    padding-top: 4%;
+}
+
+h3 {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 a {
     color: #fff;
     text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 
 li:nth-child(1) {
@@ -116,8 +126,12 @@ li:nth-child(11) {
     width: 100%;
 }
 
-li:hover {
+ul:hover li {
     opacity: 0.5;
+}
+
+ul:hover li:hover {
+    opacity: 1;
 }
 
 div {
