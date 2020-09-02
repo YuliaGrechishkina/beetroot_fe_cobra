@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0s ease-in;
+    font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    background-color: #fff;
+}
+
+.container {
+    display: block;
+    padding: 128px 137px 184px 99px;
+    max-width: 1500px;
+}
+
+.main {
+    padding: 141px 138px 227px 122px;
+    box-shadow: 0px 0px 26px 14px rgba(182, 171, 171, 0.53);
+    -webkit-box-shadow: 0px 0px 26px 14px rgba(182, 171, 171, 0.53);
+    -moz-box-shadow: 0px 0px 26px 14px rgba(182, 171, 171, 0.53);
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 39px;
+    font-family: "Playfair Display", serif;
+}
+
+p {
+    margin-bottom: 38px;
+}
+
+.main_text {
+    color: #7a7a7a;
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 38px;
+}
+
+.main_text_first::first-letter {
+    color: #000000;
+    font-size: 110px;
+    font-family: "Playfair Display", serif;
+    float: left;
+    font-weight: 400;
+    line-height: 1em;
+    margin-right: 0.09em;
+    padding-top: 0px;
+    position: relative;
+}
+
+blockquote::before {
+    font-size: 50px;
+    content: "\201C";
+    margin-right: 20px;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+
+blockquote {
+    display: block;
+    position: relative;
+    font-size: 24px;
+    font-style: italic;
+    margin-bottom: 38px;
+    margin: 0;
+    position: relative;
+    padding: 0px 50px;
+}
+
+.submit_button {
+    display: block;
+}
+
+button {
+    display: inline-block;
+    background-color: #fff;
+    border: 2px solid #eaa258;
+    color: #eaa258;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 265px;
+    height: 69px;
+}
+
+button:hover {
+    background-color: #eaa258;
+    color: #fff;
+}
