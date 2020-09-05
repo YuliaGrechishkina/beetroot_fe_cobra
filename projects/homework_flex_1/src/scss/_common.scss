@@ -27,6 +27,8 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
+    padding-left: 92px;
+    padding-right: 92px;
     position: absolute;
 }
 
@@ -36,16 +38,23 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    height: 70%;
-    width: 30%;
+    height: 67%;
+    width: 30.5%;
     position: relative;
-    padding: 10px;
+    padding: 4px;
     cursor: pointer;
 }
 
 .container_value {
     position: absolute;
-    top: 5%;
+    top: 7%;
+    left: 50%;
+    transform: translate(-36%);
+}
+
+.container_value>img {
+    max-width: 70%;
+    height: 80%;
 }
 
 .container_cup {
@@ -60,13 +69,13 @@ body {
 
 .container_cup_smoke {
     position: absolute;
-    top: 30%;
+    top: 27%;
     justify-content: center;
 }
 
 .container_cup_cup {
     position: absolute;
-    top: 45%;
+    top: 40%;
     justify-content: center;
 }
 
@@ -74,26 +83,27 @@ body {
     z-index: 1;
     position: absolute;
     top: 25%;
-    left: 30%;
+    left: 31%;
     justify-content: center;
 }
 
 .description {
     position: absolute;
-    top: 70%;
+    top: 64%;
     text-align: center;
-    font-size: $font-size;
 }
 
 h3 {
     margin-bottom: 20px;
+    font-size: $title-font-size;
 }
 
 p {
     margin-bottom: 20px;
+    font-size: $font-size;
 }
 
 .container:hover {
-    transform: scale(1.1);
+    transform: scale(1, 1.1);
     transition: 0.2s ease-in-out;
 }
