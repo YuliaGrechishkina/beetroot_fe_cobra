@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="form">
+            <div class="form__header">
+                <div class="form__header__nav">
+                    <ul class="form__header__nav_list">
+                        <li class="form__header__nav_item">
+                            <a href="#" class="nav_item__link">Sign in</a>
+                        </li>
+                        <li class="form__header__nav_item">
+                            <a href="#" class="nav_item__link">Join us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form__body">
+                <div class="form__body__content">
+                    <form action="#" method="get">
+                        <div class="form__body__content_user">
+                            <div class="form__body__content_info__user_info">
+                                <label class="label_username" for="Username">Username</label><br>
+                                <input class="input_username" minlength="4" type="text" name="Username">
+                            </div>
+                            <div class="form__body__content_info__user_pass">
+                                <label class="label_pass" for="Password">Password</label><br>
+                                <input class="input_pass" minlength="6" required type="password" name="Password">
+                            </div>
+                            <div class="form__control">
+                                <input class="input__control" type="checkbox" name="keep" id="keep">
+                                <label class="label__control" for="keep">Keep me signed in
+								</label>
+                            </div>
+                            <div class="form__button">
+                                <button type="submit" class="form__button__btn">Sign in</button>
+                            </div>
+                            <div class="form__help">
+                                <a href="/" class="form__help__link">Forgot password</a>
+                                <a href="/" class="form__help__link">Create an account</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/bundle.js"></script>
+
+</body>
+
+</html>
