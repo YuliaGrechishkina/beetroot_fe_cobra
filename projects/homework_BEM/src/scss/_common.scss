@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-size: 100%;
+}
+
+body {
+    width: 100%;
+    font-family: "MuseoSansLight";
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: 100%;
+    color: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #152335;
+    border-radius: 1%;
+    display: flex;
+    position: relative;
+    box-shadow: 0px 0px 53px 15px #152335;
+    display: inline-block;
+    width: 700px;
+    height: 400px;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.product-card {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.product-card__col {
+    padding: 80px 25px;
+    display: table-cell;
+    justify-content: center;
+    padding: 40px;
+    align-items: center;
+}
+
+.product-card__col--one {
+    width: 60%;
+    align-items: center;
+    text-align: center;
+}
+
+.product-card__col--two {
+    padding-top: 0px;
+}
+
+.product-card__img {
+    padding-top: 70px;
+    margin-bottom: 70px;
+}
+
+.product-card__radios {
+    text-align: center;
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 3px;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+ul {
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-weight: 100;
+    color: #e1e1e1;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-weight: 100;
+    color: #e1e1e1;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.product-card__rating-list-item:hover {
+    color: #fac919;
+}
+
+form {
+    display: inline-block;
+    padding-bottom: 15px;
+}
+
+select {
+    width: 70px;
+    height: 35px;
+    color: #e1e1e1;
+    background-color: #152335;
+    border: solid 1px #e1e1e1;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #2a3545;
+}
+
+button {
+    width: 185px;
+    height: 40px;
+    color: #e1e1e1;
+    background-color: #152335;
+    border: solid 1px #e1e1e1;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.add {
+    background-color: #152335;
+    border: solid 1px #e1e1e1;
+}
+
+button:hover {
+    background-color: #2a3545;
+    border: solid 1px #e1e1e1;
+}
+
+button:disabled {
+    background-color: #2a3545;
+    border: solid 1px #e1e1e1;
+}
+
+button:active {
+    background-color: #2a3545;
+    border: solid 1px #e1e1e1;
+}
+
+button:focus {
+    background-color: #2a3545;
+    border: solid 1px #e1e1e1;
+}
+
+.black {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    margin-right: 10px;
+    border: none;
+}
+
+.white {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ffff;
+    margin-right: 10px;
+    border: none;
+}
+
+.red {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin-right: 10px;
+    border: none;
+}
+
+.blue {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: lightseagreen;
+    border: none;
+}
