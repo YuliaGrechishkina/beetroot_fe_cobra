@@ -83,6 +83,13 @@ li:nth-child(1) {
     height: 43px;
     margin-top: 10px;
     margin-bottom: 8px;
+    outline: none;
+    font-size: 13px;
+    color: #fbf6e4;
+}
+
+.input_username:hover {
+    border: 2px solid #23ae92;
 }
 
 .input_pass {
@@ -91,6 +98,13 @@ li:nth-child(1) {
     width: 262px;
     height: 43px;
     margin-top: 10px;
+    outline: none;
+    font-size: 13px;
+    color: #fbf6e4;
+}
+
+.input_pass:hover {
+    border: 1px solid #23ae92;
 }
 
 .form__control {
@@ -135,6 +149,11 @@ input:disabled+label:before {
     color: #fbf6e4;
 }
 
+input[type="text"]:focus {
+    color: #fbf6e4;
+    border: 1px solid #23ae92;
+}
+
 .form__button__btn {
     background-color: #23ae92;
     border: 1px solid #23ae92;
@@ -144,6 +163,7 @@ input:disabled+label:before {
     font-size: 18px;
     color: #fbf6e4;
     margin-bottom: 30px;
+    outline: none;
 }
 
 .form__button__btn:hover {
