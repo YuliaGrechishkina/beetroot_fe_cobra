@@ -22,7 +22,7 @@ body {
 
 .flex-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: row;
     align-items: center;
     width: 100%;
@@ -38,10 +38,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #fff;
-    height: 67%;
-    width: 30.5%;
+    height: 441px;
+    width: 360px;
     position: relative;
     padding: 4px;
+    margin: 15px;
     cursor: pointer;
 }
 
