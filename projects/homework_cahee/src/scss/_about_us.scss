@@ -1,0 +1,35 @@
+.about_us {
+    height: 701px;
+    background-color: #00c4c4;
+    padding: 75px 165px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about_us_img {
+    max-width: 566px;
+    max-height: 559px;
+    margin-right: 95px;
+}
+
+.about_us_article {
+    max-width: 400px;
+    margin-top: 110px;
+    color: #ffffff;
+}
+
+.about_us_article_title {
+    font-family: "Raleway", sans-serif;
+    font-size: 90px;
+    font-weight: 900;
+    margin-bottom: 35px;
+    color: #ffffff;
+}
+
+.about_us_article_text {
+    font-family: "Raleway", sans-serif;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 300;
+}

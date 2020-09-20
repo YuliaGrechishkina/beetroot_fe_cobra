@@ -1,0 +1,25 @@
+footer {
+    background-color: #262626;
+    height: 91px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 165px;
+    align-items: center;
+    color: #b9b9b9;
+}
+
+.footer_link {
+    text-decoration: none;
+}
+
+.footer_link_logo {
+    font-family: "Pacifico", cursive;
+    color: #b9b9b9;
+    font-size: 25px;
+}
+
+span {
+    color: red;
+    font-weight: 900;
+}
