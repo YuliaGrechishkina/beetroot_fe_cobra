@@ -64,7 +64,7 @@ body {
 }
 
 .product-card__col--two {
-    padding-top: 0px;
+    padding: 40px;
 }
 
 .product-card__img {
@@ -72,8 +72,17 @@ body {
     margin-bottom: 70px;
 }
 
-.product-card__radios {
-    text-align: center;
+.product-card__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.uk-margin {
+    margin-right: 5px;
+    margin-bottom: 40px;
 }
 
 label {
@@ -146,57 +155,143 @@ button {
     border: solid 1px #e1e1e1;
 }
 
-button:hover {
+.add:hover {
     background-color: #2a3545;
-    border: solid 1px #e1e1e1;
 }
 
-button:disabled {
-    background-color: #2a3545;
-    border: solid 1px #e1e1e1;
-}
-
-button:active {
-    background-color: #2a3545;
-    border: solid 1px #e1e1e1;
-}
-
-button:focus {
-    background-color: #2a3545;
-    border: solid 1px #e1e1e1;
+.product-card__radios {
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    position: absolute;
+    bottom: -30%;
+    left: -125%;
 }
 
 .black {
+    position: absolute;
+    margin-right: 30px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.black+label {
+    position: relative;
+    margin-right: 10px;
+}
+
+.black+label::before {
+    content: "";
+    position: absolute;
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background-color: #000000;
     margin-right: 10px;
     border: none;
+    background-color: #000000;
+}
+
+.black:not(:disabled):not(:checked)+label:hover::before {
+    background-color: #c9c9c9;
 }
 
 .white {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.white:not(:disabled):not(:checked)+label:hover::before {
+    background-color: #c9c9c9;
+}
+
+.white+label {
+    position: relative;
+    margin-right: 10px;
+}
+
+.white+label::before {
+    content: "";
+    position: absolute;
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background-color: #ffff;
     margin-right: 10px;
     border: none;
+    background-color: #ffffff;
+}
+
+.red:not(:disabled):not(:checked)+label:hover::before {
+    background-color: #c9c9c9;
 }
 
 .red {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.red+label {
+    position: relative;
+    margin-right: 10px;
+}
+
+.red+label::before {
+    content: "";
+    position: absolute;
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background-color: red;
     margin-right: 10px;
     border: none;
+    background-color: red;
+}
+
+.blue:not(:disabled):not(:checked)+label:hover::before {
+    background-color: #c9c9c9;
 }
 
 .blue {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.blue+label {
+    position: relative;
+}
+
+.blue+label::before {
+    content: "";
+    position: absolute;
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    background-color: lightseagreen;
+    margin-right: 10px;
     border: none;
+    background-color: lightseagreen;
+}
+
+.black:checked+label::before {
+    background-color: #808080;
+    opacity: 0.5;
+    border: 1px solid #c9c9c9;
+}
+
+.white:checked+label::before {
+    background-color: #808080;
+    opacity: 0.5;
+    border: 1px solid #c9c9c9;
+}
+
+.red:checked+label::before {
+    background-color: #808080;
+    opacity: 0.5;
+    border: 1px solid #c9c9c9;
+}
+
+.blue:checked+label::before {
+    background-color: #808080;
+    opacity: 0.5;
+    border: 1px solid #c9c9c9;
 }
