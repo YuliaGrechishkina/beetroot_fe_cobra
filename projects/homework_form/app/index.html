@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Form</title>
+    <link rel="shortcut icon" href="./assets/fav/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -16,47 +18,39 @@
                 <div class="form__header__nav">
                     <ul class="form__header__nav_list">
                         <li class="form__header__nav_item">
-                            <a href="#" class="nav_item__link">Sign in</a>
+                            <a href="#" class="nav_item__link nav_item__link--active">Sign in</a>
                         </li>
                         <li class="form__header__nav_item">
-                            <a href="#" class="nav_item__link">Join us</a>
+                            <a href="/" class="nav_item__link">Join us</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="form__body">
-                <div class="form__body__content">
-                    <form action="#" method="get">
-                        <div class="form__body__content_user">
-                            <div class="form__body__content_info__user_info">
-                                <label class="label_username" for="Username">Username</label><br>
-                                <input class="input_username" minlength="4" type="text" name="Username">
-                            </div>
-                            <div class="form__body__content_info__user_pass">
-                                <label class="label_pass" for="Password">Password</label><br>
-                                <input class="input_pass" minlength="6" required type="password" name="Password">
-                            </div>
-                            <div class="form__control">
-                                <input class="input__control" type="checkbox" name="keep" id="keep">
-                                <label class="label__control" for="keep">Keep me signed in
-                                </label>
-                            </div>
-                            <div class="form__button">
-                                <button type="submit" class="form__button__btn">Sign in</button>
-                            </div>
-                            <div class="form__help">
-                                <a href="/" class="form__help__link">Forgot password</a>
-                                <a href="/" class="form__help__link">Create an account</a>
-                            </div>
-                        </div>
-                    </form>
+            <form action="#" method="get" class="form__body__content_user">
+                <div class="form__body__content_info__user_info">
+                    <label class="label_username" id="username" for="username">Username</label>
+                    <input class="input_username" minlength="4" type="text" name="Username" required>
                 </div>
-            </div>
+                <div class="form__body__content_info__user_pass">
+                    <label class="label_pass" id="password" for="password">Password</label>
+                    <input class="input_pass" minlength="6" type="password" name="Password" required>
+                </div>
+                <div class="form__control">
+                    <input class="input__control" type="checkbox" name="keep" id="keep" required>
+                    <label class="label__control" for="keep">Keep me signed in
+                    </label>
+                </div>
+                <button type="submit" class="form__button__btn">Sign in</button>
+                <div class="form__help">
+                    <a href="/" class="form__help__link">Forgot password</a>
+                    <a href="/" class="form__help__link">Create an account</a>
+                </div>
+            </form>
         </div>
     </main>
 
 
-    <script src="./js/app.js"></script>
+    <script src="js/bundle.js"></script>
 </body>
 
 </html>
