@@ -187,12 +187,13 @@ button {
     width: 10px;
     height: 10px;
     margin-right: 10px;
-    border: none;
+    border: 1px solid #000000;
     background-color: #000000;
 }
 
 .black:not(:disabled):not(:checked)+label:hover::before {
     background-color: #c9c9c9;
+    border: 1px solid #3f3f3f;
 }
 
 .white {
@@ -203,6 +204,7 @@ button {
 
 .white:not(:disabled):not(:checked)+label:hover::before {
     background-color: #c9c9c9;
+    border: 1px solid #3f3f3f;
 }
 
 .white+label {
@@ -217,12 +219,13 @@ button {
     width: 10px;
     height: 10px;
     margin-right: 10px;
-    border: none;
+    border: 1px solid #ffffff;
     background-color: #ffffff;
 }
 
 .red:not(:disabled):not(:checked)+label:hover::before {
     background-color: #c9c9c9;
+    border: 1px solid #3f3f3f;
 }
 
 .red {
@@ -243,12 +246,13 @@ button {
     width: 10px;
     height: 10px;
     margin-right: 10px;
-    border: none;
+    border: 1px solid red;
     background-color: red;
 }
 
 .blue:not(:disabled):not(:checked)+label:hover::before {
     background-color: #c9c9c9;
+    border: 1px solid #3f3f3f;
 }
 
 .blue {
@@ -268,7 +272,7 @@ button {
     width: 10px;
     height: 10px;
     margin-right: 10px;
-    border: none;
+    border: 1px solid lightseagreen;
     background-color: lightseagreen;
 }
 
