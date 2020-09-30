@@ -18,14 +18,16 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header {
     background-image: url(../img/hero-bg.jpeg);
     background-repeat: no-repeat;
-    max-width: 1920px;
     height: auto;
     display: flex;
+    min-width: 1920px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -272,19 +274,29 @@ main {
 
 .gallery {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-direction: column;
     align-content: space-between;
     width: 100%;
     justify-content: space-around;
 }
 
+.gallery__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .gallery_item {
     flex-grow: 1;
+    padding: 2.5px;
 }
 
 .gallery_item_big {
     flex-grow: 2;
+    padding: 2.5px;
 }
 
 .gallery_img {
