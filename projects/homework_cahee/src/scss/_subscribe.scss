@@ -37,8 +37,11 @@
 }
 
 .subscribe_form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     position: absolute;
-    top: 275px;
+    top: 225px;
 }
 
 .subscribe_form_input_email {
