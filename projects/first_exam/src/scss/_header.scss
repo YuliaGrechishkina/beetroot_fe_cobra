@@ -1,0 +1,138 @@
+.header {
+    background-image: url(../img/bg1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 900px;
+    position: relative;
+}
+
+.header__title {
+    font-size: $H480;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.header__subtitle {
+    font-size: $H220;
+    margin-bottom: 50px;
+    letter-spacing: 0.17em;
+}
+
+.header__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: $white;
+    min-width: 500px;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.header__form input {
+    width: 100%;
+    height: 60px;
+    border: 2px solid $white;
+    outline: none;
+    background-color: $white;
+    color: $white;
+}
+
+input[placeholder] {
+    text-overflow: ellipsis;
+    text-align: center;
+    color: $placeholder-color;
+    font-size: $H40;
+}
+
+input[placeholder] :focus {
+    color: transparent;
+}
+
+.header__form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    background-color: $main-color;
+    color: $white;
+    font-family: $aleo;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    font-size: $H40;
+    text-transform: uppercase;
+    padding: 22px;
+    & svg {
+        padding: 1px;
+    }
+    & span {
+        margin-right: 5px;
+    }
+}
+
+.header__form button:hover {
+    background-color: $hover-btn;
+    transition: 0.3s;
+}
+
+.header__form button:focus {
+    outline: none;
+}
+
+.header_scroll_link {
+    text-decoration: none;
+    color: $white;
+    font-size: $H40;
+    letter-spacing: 0.17em;
+    font-weight: 300;
+    align-items: center;
+    text-align: center;
+}
+
+.header__nav {
+    background-color: $main-color;
+    color: $white;
+    font-size: $H40;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    text-transform: uppercase;
+    width: 100%;
+    min-height: 80px;
+    position: absolute;
+    bottom: 0;
+}
+
+.header_logo_link {
+    text-decoration: none;
+    font-size: $H240;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.header__nav_list li {
+    list-style: none;
+    display: inline;
+}
+
+.header__nav_item {
+    margin-right: 50px;
+}
+
+.header__nav_item:last-child {
+    margin-right: 0;
+}
+
+.header__nav_link {
+    text-decoration: none;
+    font-family: $aleo;
+    color: $white;
+    font-size: $H40;
+}

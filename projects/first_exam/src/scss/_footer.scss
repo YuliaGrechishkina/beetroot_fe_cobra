@@ -1,0 +1,47 @@
+footer {
+    background-color: $card-bg;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 270px;
+    padding: 0 15%;
+}
+
+.footer_logo {
+    text-decoration: none;
+    font-size: $H240;
+    color: $white;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.footer_text {
+    font-size: $H60;
+    color: $white;
+    margin-bottom: 30px;
+}
+
+.footer_socials_list li {
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer_socials_list li:last-child {
+    margin-right: 0;
+}
+
+.footer_socials_item_link {
+    text-decoration: none;
+    color: $white;
+}
+
+.footer_socials_item_link--active {
+    color: $main-color;
+}
+
+.footer_socials_item_link:hover {
+    color: $main-color;
+    transition: 0.3s;
+}

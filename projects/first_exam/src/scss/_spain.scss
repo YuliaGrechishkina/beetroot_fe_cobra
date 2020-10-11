@@ -1,0 +1,135 @@
+.spain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spain_container_first {
+    background-image: url(../img/bg3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-height: 700px;
+    width: 100%;
+    padding: 0 15%;
+}
+
+.spain_containerr_first_info {
+    background-color: $card-bg;
+    opacity: 0.9;
+    width: 540px;
+    height: 375px;
+    padding: 50px 30px;
+}
+
+.spain_container_first_subtitle {
+    font-size: $H200;
+    font-weight: 400;
+    color: $light-grey;
+    margin-bottom: 30px;
+}
+
+.spain_container_first__title {
+    font-size: $H200;
+    color: $white;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.spain_container_first__text {
+    font-size: $H60;
+    font-weight: 400;
+    color: $light-grey;
+    margin-bottom: 50px;
+    line-height: 1.7em;
+}
+
+.spain_container_first__link {
+    text-decoration: none;
+    color: $white;
+    font-family: $aleo;
+    text-transform: uppercase;
+    background-color: $main-color;
+    background-image: url(../img/btn_bg.png);
+    background-repeat: no-repeat;
+    width: 225px;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
+}
+
+.spain_container_second {
+    background-image: url(../img/bg4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    min-height: 700px;
+    width: 100%;
+    padding: 0 15%;
+}
+
+.spain_containerr_second_info {
+    background-color: $card-bg;
+    opacity: 0.9;
+    width: 540px;
+    height: 375px;
+    padding: 50px 30px;
+}
+
+.spain_container_second_subtitle {
+    font-size: $H200;
+    font-weight: 400;
+    color: $light-grey;
+    margin-bottom: 30px;
+}
+
+.spain_container_second__title {
+    font-size: $H200;
+    color: $white;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.spain_container_second__text {
+    font-size: $H60;
+    font-weight: 400;
+    color: $light-grey;
+    margin-bottom: 50px;
+    line-height: 1.7em;
+}
+
+.spain_container_second__link {
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    background-color: #5474fd;
+    background-image: url(../img/btn_bg.png);
+    background-repeat: no-repeat;
+    width: 225px;
+    height: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        opacity: 0.8;
+        transition: opacity 0.3s;
+    }
+}

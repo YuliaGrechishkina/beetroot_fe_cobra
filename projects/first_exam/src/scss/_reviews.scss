@@ -1,0 +1,68 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.reviews_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 730px;
+    padding: 0 15%;
+    background-image: url(../img/bg5.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.reviews_title {
+    font-size: $H360;
+    font-family: $aleo;
+    color: $white;
+    margin-bottom: 90px;
+}
+
+.reviews_slider {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark-grey;
+    margin-bottom: 50px;
+}
+
+.reviews_slider_item_img {
+    display: flex;
+    min-width: 285px;
+    height: auto;
+    margin-right: 200px;
+}
+
+.reviews_slider_item_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 50px;
+}
+
+.reviews_slider_item_title {
+    font-size: $H200;
+    text-transform: uppercase;
+    color: $testimonials-color;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+
+.reviews_slider_item_text {
+    font-size: $H40;
+    font-weight: 300;
+    color: $testimonials-color;
+    margin-bottom: 50px;
+    text-align: justify;
+    text-indent: 5%;
+}

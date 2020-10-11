@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all 0s ease-in;
     font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
 }
 
 html,
@@ -27,7 +27,7 @@ body {
     background-repeat: no-repeat;
     height: auto;
     display: flex;
-    min-width: 1920px;
+    width: 1920px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -116,7 +116,7 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    margin: 50px;
+    margin-top: 50px;
     padding: 50px;
     position: absolute;
     top: -40%;
@@ -183,7 +183,7 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    margin: 50px;
+    margin-top: 50px;
     padding: 50px;
     position: absolute;
     top: -45.5%;
@@ -248,7 +248,7 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    margin: 50px;
+    margin-top: 50px;
     padding: 50px;
     position: absolute;
     top: -10%;
@@ -277,8 +277,8 @@ main {
     flex-wrap: nowrap;
     flex-direction: column;
     align-content: space-between;
-    width: 100%;
     justify-content: space-around;
+    padding: 10%;
 }
 
 .gallery__list {
@@ -362,7 +362,7 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    margin: 50px;
+    margin-top: 50px;
     padding: 50px;
     position: absolute;
     top: -40%;
@@ -387,10 +387,12 @@ button {
     text-transform: uppercase;
     width: 396px;
     height: 60px;
+    transition: all 0s ease-in;
 }
 
 button:hover {
     filter: brightness(150%);
+    transition: all 0s ease-in;
 }
 
 footer {
