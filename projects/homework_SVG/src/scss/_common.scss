@@ -13,6 +13,7 @@ body {
     font-family: "Lato", sans-serif;
     font-size: 16px;
     color: #3c3c3c;
+    overflow-x: hidden;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
     background-repeat: no-repeat;
     height: auto;
     display: flex;
-    width: 1920px;
+    min-width: 1920px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -116,17 +117,16 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    margin-top: 50px;
     padding: 50px;
     position: absolute;
-    top: -40%;
+    top: -24.5%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0);
 }
 
 .about_us_text {
-    width: 555px;
-    height: 206px;
+    max-width: 555px;
+    min-height: 206px;
     font-size: 16px;
     font-weight: 100;
     padding-top: 30px;
@@ -183,17 +183,16 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    margin-top: 50px;
     padding: 50px;
     position: absolute;
-    top: -45.5%;
+    top: -27%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0);
 }
 
 .services_text {
-    width: 555px;
-    height: 143px;
+    max-width: 555px;
+    min-height: 143px;
     font-size: 16px;
     font-weight: 100;
     padding-top: 30px;
@@ -248,10 +247,9 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    margin-top: 50px;
     padding: 50px;
     position: absolute;
-    top: -10%;
+    top: -6%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0);
 }
@@ -265,8 +263,8 @@ main {
 }
 
 .what_we_do_text {
-    width: 555px;
-    height: 206px;
+    max-width: 555px;
+    min-height: 206px;
     font-size: 16px;
     font-weight: 100;
     line-height: 160%;
@@ -274,35 +272,26 @@ main {
 
 .gallery {
     display: flex;
-    flex-wrap: nowrap;
     flex-direction: column;
-    align-content: space-between;
-    justify-content: space-around;
-    padding: 10%;
+    align-content: center;
+    justify-content: space-between;
 }
 
 .gallery__list {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
 }
 
 .gallery_item {
-    flex-grow: 1;
-    padding: 2.5px;
-}
-
-.gallery_item_big {
-    flex-grow: 2;
-    padding: 2.5px;
+    padding: 0px 2px;
 }
 
 .gallery_img {
     text-decoration: none;
     position: relative;
-    max-height: 237px;
+    max-height: 235px;
 }
 
 .gallery_text {
@@ -362,17 +351,16 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1rem;
-    margin-top: 50px;
     padding: 50px;
     position: absolute;
-    top: -40%;
+    top: -24.8%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0);
 }
 
 .contact_us_text {
-    width: 555px;
-    height: 206px;
+    max-width: 555px;
+    min-height: 206px;
     font-size: 16px;
     font-weight: 100;
     padding-top: 30px;
