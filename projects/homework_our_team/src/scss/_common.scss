@@ -72,19 +72,33 @@ header {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    position: relative;
     margin-bottom: 40px;
+    position: relative;
 }
 
 .slideshow-inner-img {
     box-sizing: border-box;
     border: 2px solid #ffcc00;
     margin: 25px;
-    max-width: 400px;
-    max-height: 400px;
+    width: 395px;
+    height: 395px;
+    padding-bottom: 30%;
+    position: relative;
 }
 
-.slideshow-inner-img_wrapper {
+.slideshow-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -o-object-position: center;
+    object-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.slideshow-inner-img-wrapper {
     background: linear-gradient( to right, #ffcc00 0%, #ffcc00 20%, transparent 20%, transparent 80%, #ffcc00 80%, #ffcc00 100%), linear-gradient( to right, #ffcc00 0%, #ffcc00 20%, transparent 20%, transparent 80%, #ffcc00 80%, #ffcc00 100%), linear-gradient( to bottom, #ffcc00 0%, #ffcc00 20%, transparent 20%, transparent 80%, #ffcc00 80%, #ffcc00 100%), linear-gradient( to bottom, #ffcc00 0%, #ffcc00 20%, transparent 20%, transparent 80%, #ffcc00 80%, #ffcc00 100%);
     background-size: 100% 2px, 100% 2px, 2px 100%, 2px 100%;
     background-position: 0 0, 0 100%, 0 0, 100% 0;
@@ -124,19 +138,37 @@ header {
         margin-bottom: 18px;
     }
     & ul li {
-        display: inline;
+        display: inline-block;
         list-style: none;
     }
     & ul {
         margin-bottom: 18px;
     }
+    & li {
+        margin-right: 5px;
+    }
+    & li:last-child {
+        margin-right: 0;
+    }
     & a {
+        min-width: 30px;
+        max-height: 30px;
         text-decoration: none;
-        & svg {
-            border: 1px solid #cccccc;
-            border-radius: 50%;
-            padding: 6px;
-        }
+        font-size: 14px;
+        color: #cccccc;
+    }
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        border: 2px solid #cccccc;
+        border-radius: 50%;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    & a:hover {
+        color: #666666
     }
     & p {
         color: #333333;
@@ -156,7 +188,7 @@ header {
         bottom: -40%;
         left: 46%;
     }
-    & button {
+    & .button {
         border: 1px solid #ffcc00;
         max-width: 120px;
         max-height: 25px;
@@ -167,7 +199,7 @@ header {
         background-color: #fff;
         position: relative;
     }
-    & button::after {
+    & .button::after {
         content: "";
         width: 11px;
         height: 5px;
@@ -176,7 +208,7 @@ header {
         bottom: 180%;
         left: 70%;
     }
-    & button::before {
+    & .button::before {
         content: "";
         width: 11px;
         height: 5px;
@@ -185,8 +217,8 @@ header {
         bottom: 180%;
         left: 15%;
     }
-    & button:hover,
-    & button:active {
+    & .button:hover,
+    & .button:active {
         background-color: #ffcc00;
         border: 1px solid #ffcc00;
     }
@@ -241,22 +273,43 @@ input[type="radio"]:checked+label:before {
 }
 
 .slideshow-inner::before {
-    content: "\3C";
-    color: #ffcc00;
-    font-size: 40px;
-    font-weight: 100;
     position: absolute;
-    left: 3%;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-left: 4px solid #ffcc00;
+    border-bottom: 4px solid #ffcc00;
+    top: 47%;
+    left: 2%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.slideshow-inner:hover::before {
+    opacity: 0.5;
+    transition: 0.1s;
 }
 
 .slideshow-inner::after {
-    content: "\3E";
-    color: #ffcc00;
-    font-size: 40px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
     position: absolute;
-    width: 0;
-    height: 0;
-    right: 3%;
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-left: 4px solid #fc0;
+    border-bottom: 4px solid #fc0;
+    top: 47%;
+    right: 2%;
+    -webkit-transform: rotate(225deg);
+    -ms-transform: rotate(225deg);
+    transform: rotate(225deg);
+    cursor: pointer;
+}
+
+.slideshow-inner:hover::after {
+    opacity: 0.5;
+    transition: 0.1s;
 }
